@@ -116,7 +116,7 @@ class GeminiFlowedHandler(TemplateHandler):
                 else:
                     image_url = url.get_proxy_url()
                     self.sections.append(
-                        f'<a href="{escape(image_url)}">{escape(link_text)}</a><br/>'
+                        f'<a href="{escape(image_url)}">⇒ {escape(link_text)}</a><br/>'
                     )
             elif line.startswith("=:"):
                 self.flush()

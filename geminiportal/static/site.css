@@ -1,6 +1,9 @@
 body {
-    margin: 1em;
+    width:100%;
+    background: #042d25;
+    color:#c8f8ef;
 }
+
 table, th, td {
     border: 1px solid black;
     min-width: 3em;
@@ -22,13 +25,36 @@ img {
     margin-right: 6px;
     font-size: 0.8em;
 }
+
+.url-div {
+background:#011f19;
+top:0;
+margin-left:-8px;
+height:48px;
+position:fixed;
+width:100%;
+
+
+}
+
+.url-div table, th, td {
+    border: none;
+    min-width: 3em;
+}
 .url-form {
-    display: flex;
-    align-items: baseline;
+ padding-top:8px;
+    text-align:center;
 }
 .url-input {
     flex-grow: 1;
-    max-width: 60ch;
+    width:100%;
+    background:#011f19;
+    color:white;
+   
+      border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
 }
 .url-submit {
     margin-left: 4px;
@@ -54,11 +80,19 @@ img {
     padding-right: 0.4em;
 }
 .body {
-    max-width: 80ch;
+  
 }
 .gemini {
-    margin-top: 1em;
+    font-size: 20px;
+
+    max-width: 800px;
+    margin: auto;
+    margin-top:65px;
     margin-bottom: 1em;
+}
+
+.gemini p {
+    margin-left: 15px;
 }
 .gemini > * {
     margin: 0;
@@ -80,6 +114,7 @@ img {
 }
 .gemini > h1 {
     font-size: 1.5em;
+    margin-bottom:30px;
 }
 .gemini > h2 {
     font-size: 1.25em;
@@ -101,6 +136,13 @@ img {
     margin-left: 4px;
     vertical-align: text-bottom;
 }
+.gemini h1 {
+color:white;
+}
+.gemini a {
+color:white;
+text-decoration:none;
+}
 .inline-image {
     cursor: zoom-in;
 }
@@ -108,4 +150,26 @@ img {
     max-width: 90vw;
     max-height: initial;
     cursor: zoom-out;
+}
+.link-line, .response-table{
+display:none;
+}
+
+.url-form table{
+width:100%;
+}
+
+.url-form .submit-td{
+width:20px;
+}
+
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
